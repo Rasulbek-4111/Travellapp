@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">travelapp-2</string>
+    <string name="o_zbekiston_bo_ylab_n_sayohat_qiling">O\'zbekiston bo\'ylab \n sayohat qiling</string>
+    <string name="o_zbekistondagi_tarixiy_joylarga_nsayohat_qiling">O\'zbekistondagi tarixiy joylarga \nsayohat qiling</string>
+    <string name="hdgfsfgsgfjhsfgshdgfhsgfhjdg">hdgfsfgsgfjhsfgshdgfhsgfhjdg</string>
+    <string name="tomosha_qilish">Tomosha qilish</string>
+    <string name="o_zbekistondagi_nmashhur_joylarga_nsayohat_qiling">O\'zbekistondagi \nmashhur joylarga \nsayohat qiling</string>
+    <string name="log_in">Log In</string>
+    <string name="viloyat_manzil">Viloyat, manzil ...</string>
+</resources>
