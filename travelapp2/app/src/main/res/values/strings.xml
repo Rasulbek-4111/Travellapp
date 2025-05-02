@@ -7,4 +7,10 @@
     <string name="o_zbekistondagi_nmashhur_joylarga_nsayohat_qiling">O\'zbekistondagi \nmashhur joylarga \nsayohat qiling</string>
     <string name="log_in">Log In</string>
     <string name="viloyat_manzil">Viloyat, manzil ...</string>
+    <string name="qidirish">Qidirish</string>
+    <string name="asosiy">Asosiy</string>
+    <string name="tadqiqot">Tadqiqot</string>
+    <string name="saqlash">Saqlash</string>
+    <string name="profile">Profile</string>
+    <string name="sarlavha">Sarlavha</string>
 </resources>

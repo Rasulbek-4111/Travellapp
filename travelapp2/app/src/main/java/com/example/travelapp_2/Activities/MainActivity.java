@@ -1,7 +1,7 @@
-package com.example.travelapp_2;
+package com.example.travelapp_2.Activities;
 
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
+
 import com.example.travelapp_2.databinding.ActivityMainBinding;
 
 public class MainActivity extends BaseActivity {

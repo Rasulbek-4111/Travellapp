@@ -1,10 +1,8 @@
-package com.example.travelapp_2;
+package com.example.travelapp_2.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.travelapp_2.databinding.ActivityIntroBinding;
 
