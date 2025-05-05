@@ -19,8 +19,13 @@ public class LoginActivity extends BaseActivity {
         binding.loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String name = binding.nameEdit.getText().toString().trim();
                 String email = binding.emailEdit.getText().toString().trim();
                 String password = binding.passwordEdit.getText().toString().trim();
+
+                if (name.isEmpty()){
+                    binding.nameLayout.setError("Ism kiritilmagan");
+                }
 
                 if (email.isEmpty()) {
                     binding.emailLayout.setError("Email kiritilmagan");
