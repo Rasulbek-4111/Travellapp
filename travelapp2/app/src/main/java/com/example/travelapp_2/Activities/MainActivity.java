@@ -5,10 +5,13 @@ import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.travelapp_2.Adapter.CategoryAdapter;
+import com.example.travelapp_2.Adapter.PopularAdapter;
 import com.example.travelapp_2.Model.CategoryModel;
+import com.example.travelapp_2.Model.ItemModel;
 import com.example.travelapp_2.databinding.ActivityMainBinding;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -27,6 +30,37 @@ public class MainActivity extends BaseActivity {
         setContentView(binding.getRoot());
 
         initCategory();
+        initPopular();
+    }
+
+    private void initPopular() {
+        DatabaseReference myRef= database.getReference("Popular");
+        binding.progressBarPopular.setVisibility(View.VISIBLE);
+
+        ArrayList<ItemModel> list=new ArrayList<>();
+
+        myRef.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if (snapshot.exists()){
+                    for (DataSnapshot issue: snapshot.getChildren()){
+                        list.add(issue.getValue(ItemModel.class));
+                    }
+                    if (!list.isEmpty()){
+                        binding.recyclerViewPopular.setLayoutManager(new LinearLayoutManager(MainActivity.this,
+                                LinearLayoutManager.HORIZONTAL,false));
+                        RecyclerView.Adapter adapter=new PopularAdapter(list);
+                        binding.recyclerViewPopular.setAdapter(adapter);
+                    }
+                    binding.progressBarPopular.setVisibility(View.GONE);
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
     }
 
     private void initCategory() {

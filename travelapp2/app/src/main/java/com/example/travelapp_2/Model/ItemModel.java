@@ -91,8 +91,8 @@ public class ItemModel implements Serializable {
         this.distance = distance;
     }
 
-    public double getScore() {
-        return score;
+    public float getScore() {
+        return (float) score;
     }
 
     public void setScore(double score) {
