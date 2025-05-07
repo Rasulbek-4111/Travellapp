@@ -11,7 +11,7 @@
     <item
         android:id="@+id/explorer"
         android:icon="@drawable/bottom_btn2"
-        android:title="@string/tadqiqot"
+        android:title="Xarita"
         app:cnb_backgroundColor="@color/blue"
         app:cnb_iconColor="@color/white"
         />

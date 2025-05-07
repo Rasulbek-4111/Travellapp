@@ -135,7 +135,6 @@
                             style="@style/Widget.AppCompat.RatingBar.Indicator"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:indeterminate="false"
                             android:isIndicator="true"
                             android:numStars="5"
@@ -155,12 +154,6 @@
                             android:textColor="@color/darkBlue"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textView11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:text="TextView" />
                     </LinearLayout>
 
                     <TextView
@@ -279,14 +272,14 @@
                                 app:layout_constraintStart_toStartOf="@+id/imageView92"
                                 app:layout_constraintTop_toBottomOf="@+id/distanceTxt" />
 
-                            <View
-                                android:id="@+id/view2"
-                                android:layout_width="1dp"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="8dp"
-                                android:background="@color/darkGrey"
-                                tools:layout_editor_absoluteY="8dp" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <View
+                            android:id="@+id/view2"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp"
+                            android:background="@color/darkGrey" />
 
                         <androidx.constraintlayout.widget.ConstraintLayout
                             android:layout_width="0dp"
@@ -343,19 +336,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/addToCartBtn"
-            style="@android:style/Widget.Button"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
-            android:background="@drawable/blue_btn_bg"
-            android:text="Tekshirish"
-            android:textColor="@color/white"
-            android:textSize="20sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/addToCartBtn"-->
+<!--            style="@android:style/Widget.Button"-->
+<!--            android:layout_width="180dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginEnd="24dp"-->
+<!--            android:background="@drawable/blue_btn_bg"-->
+<!--            android:text="Tekshirish"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="20sp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
 
         <TextView
             android:id="@+id/priceTxt"

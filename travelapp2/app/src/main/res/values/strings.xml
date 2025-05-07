@@ -13,4 +13,11 @@
     <string name="saqlash">Saqlash</string>
     <string name="profile">Profile</string>
     <string name="sarlavha">Sarlavha</string>
+    <string name="xarita">Xarita</string>
+    <string name="har_bir_qadamingiz_tarix_bilan_to_qnashadi">Har bir qadamingiz tarix bilan to\'qnashadi</string>
+    <string name="ro_yxatdan_o_tish">Ro\'yxatdan o\'tish</string>
+    <string name="ism">Ism</string>
+    <string name="email">Email</string>
+    <string name="parol">Parol</string>
+    <string name="kirish">Kirish</string>
 </resources>

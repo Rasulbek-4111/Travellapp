@@ -60,7 +60,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="16dp"
                         android:layout_marginBottom="24dp"
-                        android:text="@string/hdgfsfgsgfjhsfgshdgfhsgfhjdg"
+                        android:text="@string/har_bir_qadamingiz_tarix_bilan_to_qnashadi"
                         android:textAlignment="center"
                         android:textColor="@color/darkGrey"
                         android:textSize="16sp" />
@@ -86,7 +86,7 @@
                         android:layout_marginHorizontal="32dp"
                         android:layout_marginVertical="16dp"
                         android:background="@drawable/stroke_blue_bg"
-                        android:text="@string/log_in"
+                        android:text="@string/ro_yxatdan_o_tish"
                         android:textColor="@color/blue"
                         android:textSize="20sp" />
                 </LinearLayout>
